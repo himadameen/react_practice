@@ -1,5 +1,54 @@
 # Getting Started with Create React App
 
+<!-- Server Configure - Default Filename - re-route - home.html -->
+
+
+Class Component
+Functional Component
+
+
+
+
+
+
+
+
+
+
+
+<!-- require('../../react');
+require(../app.js);
+require(../home.js);
+
+import module1
+import module2
+import module3 -->
+
+
+<!-- ES6 - module concept - 
+export one package - import on other side
+
+require                             vs                  import-export
+complete file is brought                                single module
+one by one  /synchronous /blocked                       parallel/asynchronous
+require - anywhere                                       import - hoisting
+require - if                                            import - no if else
+
+if() {
+    import  - not allowed
+    require - allowed
+}
+
+Module - variable, function, component -->
+
+
+ARIA - http://web-accessibility.carnegiemuseums.org/foundations/aria/
+ARIA - https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
+
+
+
+# Getting Started with Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
