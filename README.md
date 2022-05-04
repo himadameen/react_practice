@@ -117,3 +117,83 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+
+
+
+
+
+
+create blank repo - npm init
+npm install dependency-name
+
+
+
+
+DOM - Document Object Model
+Virtual DOM
+
+
+
+
+//State vs Props
+//localStorage
+
+
+Props/Something else - 1) data transfer across components - not possible using js
+scene 1 - non connected component
+Props Object - scene 2 - connected component - parent child
+
+State Object - 2) data storage inside component - js possible
+
+
+State               vs                  Props
+inside component                        Across component/communicate
+update data /mutable                    no updation of data is allowed/read only/immutable
+not possible in functional component    possible in both components
+
+state can be paased inside Props        props cant be passed inside state
+
+state does not make component reusable  props make component reusable
+
+
+
+
+
+stateless component - functional
+statefull component - class
+
+
+
+
+
+
+
+
+State and Props
+Class components
+lifecycle methods
+Functional components
+Hooks - usestate, useEfftec
+Bootstrap, css, images,
+Routing
+Lifting State up, conditional operator, lists
+HOC
+Forms in React
+React Context
+Ref
+Misc Hooks
+Tetsing
+TypeScript
+Controlled and Uncontrolled component
+
+
+Redux Concepts
+
+Lazy Loading

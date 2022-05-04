@@ -51,3 +51,12 @@ function App() {
 export default App;
 
 // JSX - JavaScript XML - // templating
+
+// Snapshot - Rough Version of actual DOM
+// New Snapshot (if any data chnages/re-render component)
+// Diff - New - Old
+
+// Render the changes/diff
+
+// without refresh - page updated - (url, temp data, login check)
+// data/bandwidth/internet usage - saved
