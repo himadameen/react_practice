@@ -30,6 +30,8 @@ function App() {
         {fn()}
 
         {/* {if else} */}
+        {/* if - && = condition && execution
+        if else - ternary opearator - consition ? true impl: false impl */}
 
 
         {arr.map((item) => (

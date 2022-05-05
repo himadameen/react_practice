@@ -1,9 +1,30 @@
 import React, {Component} from 'react';
 import CricketChild from './CricketChild';
-
+// import BollywoodChild from './BollywoodChild';
 
 class Cricket extends Component {
+    constructor() {
+        super();
+        this.state = {
+            count: 0
+        }
+    }
+    increment = () => {
+        console.log('inside increment function...');
+        // this.state = {
+        //     count: this.state.count + 1
+        // }
+        //this.forceUpdate();
+        console.log(this.state.count);
+        this.setState({
+            count: this.state.count + 1
+        })
+        console.log(this.state.count);//old value
+        console.log('increment function over ...');
+        //setState is an async method - it expects new state object as parameter, not function
+    }
     render() {
+        let name = 'abcdef'
         return(
             <>
                 <div>
@@ -12,7 +33,15 @@ class Cricket extends Component {
                 <div>
                     abcd
                 </div>
-                <CricketChild />
+                <br></br>
+                <div>
+                    Count - {this.state.count}
+                    <br></br>
+                    <button onClick={this.increment}>Increase</button>
+                </div>
+                <br></br>
+                <CricketChild count_temp={this.state.count} name_temp = {name} location_temp = "GGN" />
+                {/* <BollywoodChild temp="liaugewf"/> */}
             </>
         )
     }
@@ -21,6 +50,12 @@ class Cricket extends Component {
 export default Cricket;
 
 
+
+
+// state varible
+// events
+// constructor - super
+// this keyword
 
 
 //Fragment Requirement
@@ -41,5 +76,16 @@ export default Cricket;
 
 
 
+// let a = 1;
+// console.log(a);
+
+// setTimeout(function(){
+//     a = a+1
+// },0);
+
+// console.log(a);
 
 
+// ({ count }) => ({
+//     count: count + 1
+//   })
