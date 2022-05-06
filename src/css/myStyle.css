@@ -1,0 +1,11 @@
+body {
+    background-color: aqua!important;
+    /* background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);*/
+    background-image: linear-gradient(to right top, #125ed0, #33a3e4, #008793, #00bf72, #77a710);
+    height: 100vh;
+}
+
+/* button {
+    padding: 20px;
+    background-color: blueviolet;
+} */

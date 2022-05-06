@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './css/myStyle.css';
 
 function App() {
   // var sum = 5;
