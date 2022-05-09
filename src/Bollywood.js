@@ -33,7 +33,7 @@ const Bollywood = () => {
     return(
         <>
             <div>Bollywood</div>
-            <BollywoodChild temp="Runway 34"/>
+            
 
             <br></br>
             <div>------------------------</div>
@@ -83,6 +83,10 @@ const Bollywood = () => {
                 })
             }
             </ul>
+
+
+
+            <BollywoodChild temp="Runway 34"/>
         </>
     )
 }
