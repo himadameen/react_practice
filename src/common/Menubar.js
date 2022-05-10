@@ -13,6 +13,7 @@ const Menubar = ()=>{
                     <Link to='/cricket' className='nav-link btn btn-outline-success'>Cricket</Link>
                     <Link to='/bollywood' className='nav-link btn btn-outline-success'>Bollywood</Link>
                     <Link to='/liftstate' className='nav-link btn btn-outline-success'>Lift State</Link>
+                    <Link to='/emi' className='nav-link btn btn-outline-success'>EMI</Link>
                 </Navbar>
             </div>
             </div>

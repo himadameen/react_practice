@@ -8,6 +8,7 @@ import Home from './Home';
 import Cricket from './Cricket';
 import Bollywood from './Bollywood';
 import LiftState from './LiftState';
+import EMI from './emi/EMI';
 
 import Header from './common/Header';
 import Menubar from './common/Menubar';
@@ -30,6 +31,7 @@ function App() {
               <Route path='/cricket' element={<Cricket/>}/>
               <Route path='/bollywood' element={<Bollywood/>}/>
               <Route path='/liftstate' element={<LiftState/>}/>
+              <Route path='/emi' element={<EMI/>}/>
             </Routes>
           </div>
           <Right/>

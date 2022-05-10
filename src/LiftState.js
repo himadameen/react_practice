@@ -8,6 +8,12 @@ const LiftState = () => {
         console.log('parent component methods clicked....', data);
         setCountry(data);
     }
+
+    const updateCountryInput = (event) => {
+        console.log('input field function triggere....', event.target.value);
+        setCountry(event.target.value);
+    }
+
     return(
         <>
             <div className="row bg-danger bg-opacity-50">
@@ -18,7 +24,7 @@ const LiftState = () => {
 
             <div className="row bg-warning bg-opacity-50">
                 <div className="col-12">
-                    <LiftStateChild country={country} liftFn={updateCountry}/>
+                    <LiftStateChild country={country} liftFn={updateCountry} handleChange={updateCountryInput}/>
                 </div>
             </div>
             
