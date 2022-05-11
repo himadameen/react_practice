@@ -1,5 +1,5 @@
-import React from 'react';
-import {Link, NavLink} from 'react-router-dom';
+import React, { Children } from 'react';
+import {Link} from 'react-router-dom';
 import {Nav, Navbar} from 'react-bootstrap';
 
 const Menubar = ()=>{
@@ -14,6 +14,9 @@ const Menubar = ()=>{
                     <Link to='/bollywood' className='nav-link btn btn-outline-success'>Bollywood</Link>
                     <Link to='/liftstate' className='nav-link btn btn-outline-success'>Lift State</Link>
                     <Link to='/emi' className='nav-link btn btn-outline-success'>EMI</Link>
+                    <Link to='/refclass' className='nav-link btn btn-outline-success'>RefClass</Link>
+                    <Link to='/reffn' className='nav-link btn btn-outline-success'>Ref Fn</Link>
+                    <Link to='/formfn' className='nav-link btn btn-outline-success'>Form Fn</Link>
                 </Navbar>
             </div>
             </div>
@@ -22,3 +25,9 @@ const Menubar = ()=>{
 }
 
 export default Menubar;
+
+
+
+// ref
+// ref Children
+// useRef - Hook
