@@ -6,7 +6,9 @@ class Cricket extends Component {
     constructor() {
         super();
         this.state = {
-            count: 0
+            count: 0,
+            // count2: 0,
+            // sum:0
         }
     }
     increment = () => {
@@ -19,6 +21,13 @@ class Cricket extends Component {
         this.setState({
             count: this.state.count + 1
         })
+        // For state update dependant on other state
+        // this.setState({
+        //     count2: this.state.count2 + 1
+        // })
+        // this.setState((prevState) =>({
+        //     sum: prevState.count + prevState.count2
+        // }))
         console.log(this.state.count);//old value
         console.log('increment function over ...');
         //setState is an async method - it expects new state object as parameter, not function
@@ -28,7 +37,7 @@ class Cricket extends Component {
         return(
             <>
                 <div>
-                    I am at NS.  
+                    I am at NS.
                 </div>
                 <div>
                     abcd

@@ -12,6 +12,7 @@ import EMI from './emi/EMI';
 import RefClass from './RefClass';
 import RefFn from './RefFn';
 import FormFn from './FormFn';
+import FormFnValidation from './FormFnValidation';
 
 import Header from './common/Header';
 import Menubar from './common/Menubar';
@@ -38,6 +39,7 @@ function App() {
               <Route path='/refclass' element={<RefClass/>}/>
               <Route path='/reffn' element={<RefFn/>}/>
               <Route path='/formfn' element={<FormFn/>}/>
+              <Route path='/formfn2' element={<FormFnValidation/>}/>
             </Routes>
           </div>
           <Right/>
