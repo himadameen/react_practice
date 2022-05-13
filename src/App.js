@@ -13,6 +13,9 @@ import RefClass from './RefClass';
 import RefFn from './RefFn';
 import FormFn from './FormFn';
 import FormFnValidation from './FormFnValidation';
+import HOC_Country from './hoc/HOC_Country';
+import HOC_State from './hoc/HOC_State';
+import ToDo from './ToDo';
 
 import Header from './common/Header';
 import Menubar from './common/Menubar';
@@ -40,6 +43,9 @@ function App() {
               <Route path='/reffn' element={<RefFn/>}/>
               <Route path='/formfn' element={<FormFn/>}/>
               <Route path='/formfn2' element={<FormFnValidation/>}/>
+              <Route path='/hoccountry' element={<HOC_Country/>}/>
+              <Route path='/hocstate' element={<HOC_State/>}/>
+              <Route path='/todo' element={<ToDo />}/>
             </Routes>
           </div>
           <Right/>
