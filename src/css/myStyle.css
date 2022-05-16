@@ -14,3 +14,20 @@ body {
     padding: 20px;
     background-color: blueviolet;
 } */
+
+
+.my-div {
+    width: 400px;
+    height: 100px;
+    background-color: #00bf72;
+    color: rebeccapurple;
+    font-size: 40px;
+}
+
+.my-div-temp {
+    width: 400px;
+    height: 100px;
+    background-color: #e04cc5;
+    color: rgb(21, 3, 99);
+    font-size: 40px;
+}

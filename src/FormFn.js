@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const FormFn = () => {
     const [username, setUsername] = useState('');
@@ -29,6 +29,10 @@ const FormFn = () => {
         console.log('input password', event.target.value);
         setPassword(event.target.value);
     }
+
+    useEffect(() => {
+        setTimeout(() => {setFormStatus(false);}, 5000)
+    }, [formStatus])
 
     return(
         <>

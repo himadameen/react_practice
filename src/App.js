@@ -16,6 +16,7 @@ import FormFnValidation from './FormFnValidation';
 import HOC_Country from './hoc/HOC_Country';
 import HOC_State from './hoc/HOC_State';
 import ToDo from './ToDo';
+import ModalComp from './Modal';
 
 import Header from './common/Header';
 import Menubar from './common/Menubar';
@@ -46,6 +47,8 @@ function App() {
               <Route path='/hoccountry' element={<HOC_Country/>}/>
               <Route path='/hocstate' element={<HOC_State/>}/>
               <Route path='/todo' element={<ToDo />}/>
+              <Route path='/modal' element={<ModalComp />}/>
+              
             </Routes>
           </div>
           <Right/>
