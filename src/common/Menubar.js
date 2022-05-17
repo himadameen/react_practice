@@ -8,6 +8,7 @@ const Menubar = ()=>{
             <div className='row bg-info bg-opacity-75'>
             <div className='col-12 text-center'>
                 <Navbar>
+                    <Link to='/classcomp' className='nav-link btn btn-outline-success'>Class Comp</Link>
                     <Link to='/modal' className='nav-link btn btn-outline-success'>Modal</Link>
                     <Link to='/todo' className='nav-link btn btn-outline-success'>To Do</Link>
                     <Link to='/hoccountry' className='nav-link btn btn-outline-success'>HOC Country</Link>
