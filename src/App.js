@@ -18,6 +18,8 @@ import HOC_State from './hoc/HOC_State';
 import ToDo from './ToDo';
 import ModalComp from './Modal';
 import ClassComp from './ClassComp';
+import Github from './Github';
+import GithubFn from './GithubFn';
 
 import Header from './common/Header';
 import Menubar from './common/Menubar';
@@ -50,7 +52,8 @@ function App() {
               <Route path='/todo' element={<ToDo />}/>
               <Route path='/modal' element={<ModalComp />}/>
               <Route path='/classcomp' element={<ClassComp />}/>
-              
+              <Route path='/github' element={<Github />}/>
+              <Route path='/githubfn' element={<GithubFn />}/>
             </Routes>
           </div>
           <Right/>

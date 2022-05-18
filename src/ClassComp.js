@@ -32,6 +32,7 @@ class ClassComp extends React.Component {
 
     componentWillUnmount() {
         // clearInterval(ret)
+        //alert('aiuewf');
         console.log('------------unmount---------------');
     }
 
@@ -82,7 +83,7 @@ export default ClassComp;
 //     shouldComponentUpdate - comparing virtual dom
 //     *****render - jsx
 //     getSnapshotbeforeUpdate
-//     *****componentDidMount - after every re-rendering
+//     *****componentDidUpdate - after every re-rendering
 
 
 //     phase 3 - unmounting
@@ -93,11 +94,11 @@ export default ClassComp;
 // render
 // componentDidMount
 // render
-// componentDidMount
+// componentDidUpdate
 // render
-// componentDidMount
+// componentDidUpdate
 // render
-// componentDidMount
+// componentDidUpdate
 // render
-// componentDidMount
+// componentDidUpdate
 // componentWillUnmount
