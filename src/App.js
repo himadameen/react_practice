@@ -20,6 +20,7 @@ import ModalComp from './Modal';
 import ClassComp from './ClassComp';
 import Github from './Github';
 import GithubFn from './GithubFn';
+import ContactApp from './ContactApp';
 
 import Header from './common/Header';
 import Menubar from './common/Menubar';
@@ -54,6 +55,7 @@ function App() {
               <Route path='/classcomp' element={<ClassComp />}/>
               <Route path='/github' element={<Github />}/>
               <Route path='/githubfn' element={<GithubFn />}/>
+              <Route path='/contactapp' element={<ContactApp />}/>
             </Routes>
           </div>
           <Right/>

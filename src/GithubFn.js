@@ -5,16 +5,24 @@ const GithubFn = () => {
     const [pageNum, setPageNum] = useState(1);
     const [buttons, setButtons] = useState([1,2,3,4,5,6,7,8,9,10]);
 
-    const callApi = () => {
-        fetch(`https://api.github.com/repositories/1296269/issues?page=${pageNum}&per_page=5`)
-       .then(data => {
-           return data.json();
-       })
-       .then(response => {
-           console.log(response);
-           //renderTable
-           setIssuesList(response);
-       })
+    // const callApi = () => {
+    //     fetch(`https://api.github.com/repositories/1296269/issues?page=${pageNum}&per_page=5`)
+    //    .then(data => {
+    //        return data.json();
+    //    })
+    //    .then(response => {
+    //        console.log(response);
+    //        //renderTable
+    //        setIssuesList(response);
+    //    })
+    // }
+
+
+    const callApi = async () => {
+        const data = await fetch(`https://api.github.com/repositories/1296269/issues?page=${pageNum}&per_page=5`);
+        const response  = await data.json();
+        console.log(response);
+        setIssuesList(response);
     }
 
     const updatePageNum = (num) => {
@@ -23,6 +31,7 @@ const GithubFn = () => {
 
     useEffect(() => {
         callApi();
+        // setTimeout(callApi, 5000);
     }, [])
     //componentDidMount - just one time trigger
 
@@ -34,6 +43,7 @@ const GithubFn = () => {
 
 
     useEffect(() => {
+        // console.log('in pagenum useEffect');
         callApi();
     }, [pageNum])
     //trigger on every pageNum update
@@ -56,7 +66,8 @@ const GithubFn = () => {
                     ))
                 }
                 <button className='btn btn-sm btn-primary'>Next</button>
-                <table className='table table-striped table-responsive'>
+                
+                {issuesList.length > 0 ? (<table className='table table-striped table-responsive'>
                     <thead>
                         <tr>
                             <th>Number</th>
@@ -79,6 +90,14 @@ const GithubFn = () => {
                     }
                     </tbody>
                 </table>
+                )
+                :
+                (
+                    <div>
+                        <img src='https://miro.medium.com/max/1400/1*CsJ05WEGfunYMLGfsT2sXA.gif'/>
+                    </div>
+                    )
+                }
             </>
     )
 }
