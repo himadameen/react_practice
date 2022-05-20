@@ -16,6 +16,7 @@ const Menubar = ()=>{
                     <Link to='/todo' className='nav-link btn btn-outline-success'>To Do</Link>
                     <Link to='/hoccountry' className='nav-link btn btn-outline-success'>HOC Country</Link>
                     <Link to='/hocstate' className='nav-link btn btn-outline-success'>HOC State</Link>
+                    <Link to='/hoccity' className='nav-link btn btn-outline-success'>HOC City</Link>
                     <Link to='/test' className='nav-link btn btn-outline-success'>Test</Link>
                     <Link to='/home' className='nav-link btn btn-outline-success'>Home</Link>
                     <Link to='/cricket' className='nav-link btn btn-outline-success'>Cricket</Link>
