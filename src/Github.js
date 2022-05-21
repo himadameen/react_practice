@@ -32,7 +32,7 @@ class ClassComp extends React.Component {
         // const options = {
         //     method: 'GET',
         //     headers: {
-        //         'X-API-KEY': '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',
+        //         'X-API-KEY': process.env.REACT_API_GITHUB_API_KEY,
         //         'Access-Control-Allow-Headers': '*'
         //     }
         // }
