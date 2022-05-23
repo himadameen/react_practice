@@ -31,3 +31,7 @@ body {
     color: rgb(21, 3, 99);
     font-size: 40px;
 }
+
+.navbar-expand {
+    flex-wrap: wrap!important;
+}
