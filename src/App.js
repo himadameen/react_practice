@@ -23,6 +23,7 @@ import Github from './Github';
 import GithubFn from './GithubFn';
 import ContactApp from './ContactApp';
 import HookReducer from './hooks/HookReducer';
+import Parent from './context/Parent';
 
 import Header from './common/Header';
 import Menubar from './common/Menubar';
@@ -60,7 +61,7 @@ function App() {
               <Route path='/githubfn' element={<GithubFn />}/>
               <Route path='/contactapp' element={<ContactApp />}/>
               <Route path='/hookreducer' element={<HookReducer />}/>
-              
+              <Route path='/parent' element={<Parent />}/>
             </Routes>
           </div>
           <Right/>
