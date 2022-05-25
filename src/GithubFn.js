@@ -1,9 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import { DataAppContext } from './common/DataApp';
 
 const GithubFn = () => {
     const [issuesList, setIssuesList]  = useState([]);
     const [pageNum, setPageNum] = useState(1);
     const [buttons, setButtons] = useState([1,2,3,4,5,6,7,8,9,10]);
+
+    const loginDetails = useContext(DataAppContext);
+    console.log(loginDetails);
 
     // const callApi = () => {
     //     fetch(`https://api.github.com/repositories/1296269/issues?page=${pageNum}&per_page=5`)
@@ -59,6 +63,16 @@ const GithubFn = () => {
 
     return(
         <>
+        <div className='row bg-info bg-opacity-50'>
+            <div className='col-9'>
+                {loginDetails.isLoggedIn && <div>Hi {loginDetails.userName}</div>}
+            </div>
+            <div className='col-3'>
+                {loginDetails.isLoggedIn ? 
+                (<button onClick={() => loginDetails.setLogin(false)}>Logout</button>) :
+                (<button onClick={() => loginDetails.setLogin(true)}>Login</button>)}
+            </div>
+        </div>
         <h2>Issues List</h2>
                 {
                     buttons && buttons.map((item) => (

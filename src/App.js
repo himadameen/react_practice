@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import './css/myStyle.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -23,7 +24,7 @@ import Github from './Github';
 import GithubFn from './GithubFn';
 import ContactApp from './ContactApp';
 import HookReducer from './hooks/HookReducer';
-import Parent from './context/Parent';
+import Parent, { NameContext } from './context/Parent';
 
 import Header from './common/Header';
 import Menubar from './common/Menubar';
@@ -31,42 +32,48 @@ import Footer from './common/Footer';
 import Left from './common/Left';
 import Right from './common/Right';
 
+import DataApp from './common/DataApp';
+import Login from './Login';
+
 function App() {
   return (
     <div className='container'>
       <BrowserRouter>
-        <Header/>
-        <Menubar/>
-        <div className='row'>
-          <Left/>
-          <div className='col-8 bg-light bg-opacity-75'>
-            <Routes>
-              <Route path='/test' element={<Test />}/>
-              <Route path='/home' element={<Home/>}/>
-              <Route path='/cricket' element={<Cricket/>}/>
-              <Route path='/bollywood' element={<Bollywood/>}/>
-              <Route path='/liftstate' element={<LiftState/>}/>
-              <Route path='/emi' element={<EMI/>}/>
-              <Route path='/refclass' element={<RefClass/>}/>
-              <Route path='/reffn' element={<RefFn/>}/>
-              <Route path='/formfn' element={<FormFn/>}/>
-              <Route path='/formfn2' element={<FormFnValidation/>}/>
-              <Route path='/hoccountry' element={<HOC_Country/>}/>
-              <Route path='/hocstate' element={<HOC_State/>}/>
-              <Route path='/hoccity' element={<HOC_City/>}/>
-              <Route path='/todo' element={<ToDo />}/>
-              <Route path='/modal' element={<ModalComp />}/>
-              <Route path='/classcomp' element={<ClassComp />}/>
-              <Route path='/github' element={<Github />}/>
-              <Route path='/githubfn' element={<GithubFn />}/>
-              <Route path='/contactapp' element={<ContactApp />}/>
-              <Route path='/hookreducer' element={<HookReducer />}/>
-              <Route path='/parent' element={<Parent />}/>
-            </Routes>
+        <DataApp>
+          <Header/>
+          <Menubar/>
+          <div className='row'>
+            <Left/>
+            <div className='col-8 bg-light bg-opacity-75'>
+              <Routes>
+                <Route path='/test' element={<Test />}/>
+                <Route path='/home' element={<Home/>}/>
+                <Route path='/cricket' element={<Cricket/>}/>
+                <Route path='/bollywood' element={<Bollywood/>}/>
+                <Route path='/liftstate' element={<LiftState/>}/>
+                <Route path='/emi' element={<EMI/>}/>
+                <Route path='/refclass' element={<RefClass/>}/>
+                <Route path='/reffn' element={<RefFn/>}/>
+                <Route path='/formfn' element={<FormFn/>}/>
+                <Route path='/formfn2' element={<FormFnValidation/>}/>
+                <Route path='/hoccountry' element={<HOC_Country/>}/>
+                <Route path='/hocstate' element={<HOC_State/>}/>
+                <Route path='/hoccity' element={<HOC_City/>}/>
+                <Route path='/todo' element={<ToDo />}/>
+                <Route path='/modal' element={<ModalComp />}/>
+                <Route path='/classcomp' element={<ClassComp />}/>
+                <Route path='/github' element={<Github />}/>
+                <Route path='/githubfn' element={<GithubFn />}/>
+                <Route path='/contactapp' element={<ContactApp />}/>
+                <Route path='/hookreducer' element={<HookReducer />}/>
+                <Route path='/parent' element={<Parent />}/>
+                <Route path='/login' element={<Login />}/>
+              </Routes>
+            </div>
+            <Right/>
           </div>
-          <Right/>
-        </div>
-        <Footer/>
+          <Footer/>
+        </DataApp>
       </BrowserRouter>
     </div>
   );

@@ -27,7 +27,6 @@ class ChildB extends React.Component {
 
 
 
-
             <div>---------------------</div>
             <ChildC/>
             </>

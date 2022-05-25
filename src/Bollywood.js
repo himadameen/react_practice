@@ -85,8 +85,21 @@ const Bollywood = () => {
             </ul>
 
 
+            <br></br>
+            <br/>
+            {/* <BollywoodChild temp="Runway 34"/>
+            <BollywoodChild temp="Runway 34"> Runway 34</BollywoodChild> */}
+            {/* <BollywoodChild>
+                Runway 34
+                abc
+                -------------
+                <Button>
 
-            <BollywoodChild temp="Runway 34"/>
+                </Button>
+            </BollywoodChild>
+
+            getdoc by id.childnodes
+            getdoc by id.children */}
         </>
     )
 }
