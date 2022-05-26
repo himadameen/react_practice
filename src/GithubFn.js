@@ -42,6 +42,7 @@ const GithubFn = () => {
 
     useEffect(() => {
         //callApi();
+        console.log('useeffect of githubfn got triggered...');
     })
     //componentDidMount and componentDidUpdate - trigger every time - re-render
 

@@ -18,9 +18,17 @@ class Cricket extends Component {
         // }
         //this.forceUpdate();
         console.log(this.state.count);
-        this.setState({
-            count: this.state.count + 1
-        })
+        if(this.state.count % 8 === 0 &&  this.state.count !== 0) {
+            console.log('new count---');
+            this.setState({
+                count: this.state.count + 2
+            })
+        }
+        else {
+            this.setState({
+                count: this.state.count + 1
+            })
+        }
         // For state update dependant on other state
         // this.setState({
         //     count2: this.state.count2 + 1

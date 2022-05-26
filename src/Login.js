@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { DataAppContext } from './common/DataApp';
 
 const Login = () => {
@@ -18,6 +18,12 @@ const Login = () => {
         loginDetails.setUserName(username);
         
     }
+
+    useEffect(() => {
+        //callApi();
+        console.log('useeffect of login got triggered...');
+    })
+    
     return(
         <>
             <input type="text" onChange={updateUsernameFn} value={username} placeholder='Enter Username'/>

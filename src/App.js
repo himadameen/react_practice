@@ -34,10 +34,11 @@ import Right from './common/Right';
 
 import DataApp from './common/DataApp';
 import Login from './Login';
+import ColorApp from './ColorApp';
+import NotFound from './common/NotFound';
 
 function App() {
   return (
-    <div className='container'>
       <BrowserRouter>
         <DataApp>
           <Header/>
@@ -68,6 +69,14 @@ function App() {
                 <Route path='/hookreducer' element={<HookReducer />}/>
                 <Route path='/parent' element={<Parent />}/>
                 <Route path='/login' element={<Login />}/>
+                <Route path='/colorapp' element={<ColorApp />}/>
+                <Route path='/apps'>
+                  <Route path='app1' element={<EMI />}/>
+                  <Route path='app2' element={<ColorApp />}/>
+                  <Route path='app3' element={<GithubFn />}/>
+                </Route>
+                <Route path='/' element={<Home />}/>
+                <Route path='/*' element={<NotFound />}/>
               </Routes>
             </div>
             <Right/>
@@ -75,7 +84,6 @@ function App() {
           <Footer/>
         </DataApp>
       </BrowserRouter>
-    </div>
   );
 }
 
