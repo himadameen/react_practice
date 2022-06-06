@@ -3,7 +3,7 @@ import BollywoodChild from './BollywoodChild';
 import './css/myStyle.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
-
+import Txt from './Txt';
 
 const Bollywood = () => {
     const [status, setStatus] = useState(false);
@@ -34,7 +34,7 @@ const Bollywood = () => {
         <>
             <div>Bollywood</div>
             
-
+            <Txt name= {"Now I can render any React component on any DOM node I want using ReactDOM.render"} />
             <br></br>
             <div>------------------------</div>
             <Button variant="secondary" onClick={showhide}>Show /Hide</Button>

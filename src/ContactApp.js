@@ -5,6 +5,11 @@ import {Row, Col} from 'react-bootstrap';
 
 const ContactApp = () => {
     const [contactList, setContactList]  = useState([]);
+    const [numb , setNumb] = useState(0);
+
+    const clickMock = () => {
+        setNumb(numb+1);
+    }
 
     const initialValues = {id: '', name: '', email: ''};
     const [formData, setFormData] = useState(initialValues);
@@ -115,6 +120,10 @@ const ContactApp = () => {
                     <br></br>
                     <button type="submit" onClick={handleSubmit}>Register</button>
                 </form>
+
+                <p>----------------------------------------------</p>
+                <span id='counter'>{numb}</span>
+                <button id='mockClick' onClick={clickMock}>counter</button>
         </>
     )
 }

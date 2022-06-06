@@ -6,7 +6,8 @@ class ClassComp extends React.Component {
         super();
         console.log('constructor------------------')
         this.state = {
-            count:0
+            count:0 , 
+            show: false
         }
     }
     updateCount = () => {
@@ -15,6 +16,14 @@ class ClassComp extends React.Component {
             count: this.state.count + 1
         })
     }
+
+    showText = () => {
+        this.setState({
+            show: true
+        })
+    }
+
+    
     componentDidMount () {
         console.log('my tkt booked for component did mount');
         //var ret - setInterval
@@ -45,6 +54,15 @@ class ClassComp extends React.Component {
                 <h1>test of Class Component - Lifecycle Methods</h1>
                 Count = {this.state.count}
                 <button onClick={this.updateCount}>Update</button>
+                <br></br>
+                <p>-------------------------------------</p>
+                <button id="click" onClick={this.showText}>click me</button>
+                {this.state.show && <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes
+            me so happy</p>}
+                <p>-------------------------------------</p>
+                
+
+
 
 
                 {/* //loader at begining

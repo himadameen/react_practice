@@ -25,6 +25,8 @@ import GithubFn from './GithubFn';
 import ContactApp from './ContactApp';
 import HookReducer from './hooks/HookReducer';
 import Parent, { NameContext } from './context/Parent';
+import PracApi from './PracApi';
+
 
 import Header from './common/Header';
 import Menubar from './common/Menubar';
@@ -47,6 +49,7 @@ function App() {
             <Left/>
             <div className='col-8 bg-light bg-opacity-75'>
               <Routes>
+                <Route path='/pracapi' element={<PracApi />}/>
                 <Route path='/test' element={<Test />}/>
                 <Route path='/home' element={<Home/>}/>
                 <Route path='/cricket' element={<Cricket/>}/>
